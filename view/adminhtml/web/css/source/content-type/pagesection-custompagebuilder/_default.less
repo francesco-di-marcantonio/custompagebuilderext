@@ -1,0 +1,72 @@
+//
+//  Default appearance styles.
+//  _____________________________________________
+
+[data-content-type='pagesection-lcn02'] {
+
+  // Custom class example
+  .my-class {
+    font-size: 20px;
+    font-weight: normal;
+    padding: 20px;
+  }
+}
+
+
+// Custom class example
+.provaClass {
+  font-size: 20px;
+  font-weight: normal;
+  padding: 20px;
+}
+
+
+// Required when using a custom SVG icon for your content type in the Page Builder panel
+.icon-customfosca {
+  content: url('@{baseDir}Pagesection_LCN02/css/images/content-type/pagesection-lcn02/appearance/icon-customfosca.svg');
+  width: 16px;
+  height: 16px;
+  margin-bottom: -2px;
+  margin-left: 1px;
+}
+
+
+
+////////////////////////////////////// 
+//
+// CSS IMMAGINI
+///////////////////////////////////////
+
+.pagebuilder-image {
+  width: 100%;
+}
+
+.pagebuilder-content-type [data-content-type='image'] {
+  box-sizing: border-box;
+  margin: 0;
+
+  div.pagebuilder-image-empty-preview {
+    align-items: center;
+    background: @color-white-fog;
+    border-radius: inherit;
+    display: flex;
+    height: 300px;
+    justify-content: center;
+    width: 100%;
+
+    span {
+      color: @color-gray65-lighten;
+    }
+  }
+
+  figcaption {
+    padding: 15px 0;
+    word-wrap: break-word;
+  }
+
+  .preview-image,
+  [data-element='link'],
+  [data-element='link'] img {
+    border-radius: inherit;
+  }
+}
